@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=   
+"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">   
+    </script>   
+    
+    <script src=   
+"https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">   
+    </script>   
+    
+    <link href=   
+"http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
+        rel="stylesheet" type="text/css" />   
+</head>
+<body>
+    
+    <h1 align="center">Search Product</h1>
+
+    <table border="1" align="center">
+
+        <form method ="POST">
+
+            {% csrf_token %}
+
+            <tr>
+                <th>Search</th>
+                <td><input type="text" name="search" autocomplete="{% for x in products %} {{ x.name }}  {% endfor %}"></td>
+            </tr>
+
+            <tr>
+                <th colspan="2" align="center"><input type="submit" value="submit"></th>
+            </tr>
+
+
+        </form>
+
+
+    </table>
+
+  
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="1" align="center">
+
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Image</th>
+        </tr>
+
+        {% for x in data %}
+
+            <tr>
+                <td>{{ x.name }}</td>
+                <td>{{ x.price }}</td>
+                <td><img src="{{ x.image.url }}" height="250px"  width="250px"></td>
+            </tr>
+
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>

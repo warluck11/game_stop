@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="static/image/facicon.png">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <title>GameStop</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span class="text-black">Game</span><span class="text-danger">Stop</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="nav-link" href="#games">All Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Our Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/image/img1.jpg" height="550px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="static/image/img3.jpg" height="550px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="static/image/img4.png" height="550px" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <section id="service">
+
+
+        <div class="container text-center" style="margin-top: 80px;">
+            <div class="row">
+              <div class="col-4">
+                <div class="text-center">
+                    <img src="static/image/img8.jpg" height="350px" class="rounded" alt="...">
+                  </div>
+              </div>
+              <div class="col-6">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                      <p>At Game<span class="text-danger">Stop</span></p>
+                    </blockquote>
+                    <figcaption class="fw-lighter" style="padding-left: 50px; padding-right: 50px;">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vel, 
+                     quia dolorum qui ea aperiam ab modi deleniti error, incidunt 
+                     recusandae, tempora a non laborum amet. Delectus quia consequuntur eum.
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                     Blanditiis dolor beatae ea. Cumque odio quisquam natus
+                      eius provident expedita minima ipsa ad, repudiandae 
+                      quis libero assumenda voluptatum cum? Ducimus, incidunt!
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                       Dignissimos quaerat, illum excepturi quo blanditiis 
+                       perferendis quos praesentium voluptatum, iure et animi
+                        ullam. Ut ipsum voluptates enim atque hic deleniti ea.
+                    </figcaption>
+                  </figure>
+              </div>
+            </div>
+          </div>
+
+
+      </section>
+
+
+
+      <section id="games">
+
+        <h1 class="display-5 text-center text-danger fw-medium">Our Games</h1>
+
+        <div class="container text-center" style="margin-top: 80px;">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    
+                    <img src="static/image/img9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">SpiderMan</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-danger">Buy</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="static/image/img10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Assassins Creed</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-danger">Buy</button>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="static/image/img11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Elden Ring</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <button type="button" class="btn btn-danger">Buy</button>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+    
+</body>
+</html>
